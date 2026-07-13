@@ -1,160 +1,156 @@
 /*cssreset*/
-*{ 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Segoe UI', Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-:root{
+:root {
 
-    --cafe-escuro:#4b2e2e;
-    --creme:#f5ede1;
-    --laranja:#d98e04;
-    --texto:#2e2117;
-    --branco:#ffffff;
-    }
+    --cafe-escuro: #4b2e2e;
+    --creme: #f5ede1;
+    --laranja: #d98e04;
+    --texto: #2e2117;
+    --branco: #ffffff;
+}
 
-body{
+body {
     background: var(--creme);
     color: var(--texto);
-    line-height:1.6;
+    line-height: 1.6;
 }
 
-section{
+section {
     padding: 5rem 5%;
 }
 
-.cabecalho{
-   background:var(--cafe-escuro);
+.cabecalho {
+    background: var(--cafe-escuro);
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    padding:1rem 10%;
+    padding: 1rem 10%;
 
     position: sticky;
     top: 0;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
-.logo{
-    color:var(--creme);
-    }
+.logo {
+    color: var(--creme);
+}
 
-.menu__lista{
+.menu__lista {
 
-    display:flex;
-    list-style:none;
+    display: flex;
+    list-style: none;
     gap: 1.88em;
 }
 
-.menu__lista a{
-   text-decoration: none;
-   color: var(--branco);
-   font-weight: bold;
-   transition: .3s;
+.menu__lista a {
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: bold;
+    transition: .3s;
 
 }
 
-.menu__lista a:hover{
+.menu__lista a:hover {
     color: var(--laranja);
 }
 
-.hero{
+.hero {
 
     height: 40.63em;
 
     background:
-    linear-gradient(rgba(75,46,46,.60),rgba(75,46,46,.60)),
-    url("https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=1200&q=80");
+        linear-gradient(rgba(75, 46, 46, .60), rgba(75, 46, 46, .60)),
+        url("https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=1200&q=80");
 
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    text-align:center;
+    text-align: center;
 
-    color:white;
+    color: white;
 
 }
 
-.hero_conteudo{
+.hero_conteudo {
     max: width 43.75em;
 }
 
-.hero_titulo{
+.hero_titulo {
     font: size 3.5em;
     margin: bottom 1.25rem;
 }
 
-.hero_texto{
+.hero_texto {
     font: size 1.38em;
     margin: bottom 2.19em;
 }
 
-.botao{
+.botao {
 
-    display:inline-block;
-
-    background:var(--laranja);
-
-    color:white;
-
-    padding:1rem 2.20rem;
-
-    border-radius:1.9rem;
-
-    text-decoration:none;
-
-    transition:.3s;
+    display: inline-block;
+    background: var(--laranja);
+    color: white;
+    padding: 1rem 2.20rem;
+    border-radius: 1.9rem;
+    text-decoration: none;
+    transition: .3s;
+    display: inline-block;
+    margin: 2rem;
 
 }
 
-.botao:hover{
+.botao:hover {
 
-    background:#b97803;
+    background: #b97803;
 }
 
-.sobre{
+.sobre {
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 3.75em;
 }
 
-.sobre-texto{
+.sobre-texto {
 
     max: width 34.4em;
 }
 
-.sobre h2{
+.sobre h2 {
 
     font: size 2.5em;
     margin: bottom 1.25em;
 }
 
-.imagem-sobre{
+.imagem-sobre {
 
-    width:100%;
-    max-width:500px;
-    border-radius:12px;
-
-}
-
-#cardapio h2{
-
-    text-align:center;
-    margin-bottom:40px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
 
 }
 
-.cards{
+#cardapio h2 {
+
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.cards {
     background: var(--branco);
     width: 100%;
     padding: 6.5rem 0;
@@ -164,127 +160,127 @@ section{
     flex-wrap: wrap;
 }
 
-.card{
+.card {
 
-    width: 15rem;               
+    width: 15rem;
     background: var(--creme);
-    padding: 1.6rem;        
-    border-radius: 0.75rem;     
+    padding: 1.6rem;
+    border-radius: 0.75rem;
     text-align: center;
-    box-shadow: 0 0.3rem 0.9rem rgba(0,0,0,.15);
+    box-shadow: 0 0.3rem 0.9rem rgba(0, 0, 0, .15);
     transition: .3s;
 
 }
 
 .titulo {
     text-align: center;
-    margin: 1.9rem 0;         
+    margin: 1.9rem 0;
 
 }
 
-.card:hover{
-    transform: translateY(-0.5rem); 
+.card:hover {
+    transform: translateY(-0.5rem);
 }
 
-.card h3{
-    margin-bottom: 0.9rem; 
+.card h3 {
+    margin-bottom: 0.9rem;
 }
 
-.card span{
+.card span {
     display: block;
-    margin-top: 0.9rem; 
+    margin-top: 0.9rem;
     color: var(--laranja);
-    font-size: 1.4rem;  
+    font-size: 1.4rem;
     font-weight: bold;
 
 }
 
-.contato{
+.contato {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2.5rem;              
+    gap: 2.5rem;
 }
 
-.contato-info h2{
-    font-size: 2.5rem;     
-    margin-bottom: 1.25rem; 
+.contato-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
 }
 
-.contato-info p{
-    margin-bottom: 0.62rem; 
+.contato-info p {
+    margin-bottom: 0.62rem;
 }
 
-.rodape{
+.rodape {
     background: var(--cafe-escuro);
     color: var(--creme);
     text-align: center;
-    padding: 1.5rem;         
+    padding: 1.5rem;
 }
 
 @media (max-width: 768px) {
 
-    section{
+    section {
         padding: 3rem 5%;
     }
 
-    .cabecalho{
+    .cabecalho {
         flex-direction: column;
         gap: 1rem;
         padding: 1rem;
     }
 
-    .menu__lista{
+    .menu__lista {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
     }
 
-    .hero{
+    .hero {
         height: 60vh;
         padding: 1rem;
     }
 
-    .hero_titulo{
+    .hero_titulo {
         font-size: 2.2rem;
     }
 
-    .hero_texto{
+    .hero_texto {
         font-size: 1rem;
     }
 
-    .sobre{
+    .sobre {
         flex-direction: column;
         text-align: center;
     }
 
-    .imagem-sobre{
+    .imagem-sobre {
         max-width: 100%;
     }
 
-    .cards{
+    .cards {
         flex-direction: column;
         align-items: center;
     }
 
-    .card{
+    .card {
         width: 90%;
         max-width: 320px;
     }
 
-    .contato{
+    .contato {
         flex-direction: column;
         text-align: center;
     }
 
-    .contato iframe{
+    .contato iframe {
         width: 100%;
         height: 300px;
     }
 
     .contato-info h2,
     .sobre h2,
-    #cardapio h2{
+    #cardapio h2 {
         font-size: 2rem;
     }
 }
